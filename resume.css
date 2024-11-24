@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  /* цвет страницы */
+  background-color: #f1f1f1;
+  /* цвет шрифта на странице */
+  color: #0f141e; 
+  /* задание размера базового шрифта */
+  font-size: 16px;
+  /* жирность шрифта */
+  font-weight: normal;
+  /* выбор шрифта для нашего проекта 
+  https://fonts.google.com/specimen/Roboto
+  отсюда можно добавить шрифт, который нужен вам
+  */
+  /* font-family: Georgia, 'Times New Roman', Times, serif; меняем шрифт*/
+  font-family: "Roboto", sans-serif;
+  /* font: normal 16 px 'Roboto', sans-serif; 
+  в этой строке мы объединили 
+  font-size: 16px; font-weight: normal;  font-family: "Roboto", sans-serif;*/
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* наведение мышки */
+a:hover {
+  text-decoration: underline;
+}
+/* наведение мыши меняет цвет ссылки */
+a:active {
+  color: blue;
+}
+/* если ссылку посетили, изменяет цвет */
+a:visited {
+  color: gray;
+}
+
+/* стилизация картинки */
+.avatar {
+  width: 300px;
+  /* скругление картинки */
+  border-radius: 28px;
+  /* тень картики rgba задает цвет тени */
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 25);/*тень*/
+}
+
+.container {
+  /* max-width: дает адаптивность сайту под любые устройства */
+  max-width: 750px;
+  /*  контент по середине */
+  margin: auto;
+  padding-top: 30px;
+}
+.info {
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+@media (max-width: 700px) {
+.info {
+  text-align: center;
+  display: block;
+}
+  
+}
+.info-text {
+  margin-left: 40px;
+
+}
+
+.info-text h4 {
+margin-bottom: 10px;}
+
+.info p {
+  color: #86898f;
+  margin: 0;
+  /* наклон текст */
+  font-style: italic;
+  /* жирность */
+  font-weight: bold;
+  /* подчеркивание текста*/
+  /* text-decoration: underline; */
+  /* трасфор текста верх нижний регистр */
+  /* text-transform: capitalize; */ 
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.list li, ol, li {
+  color: #86898f;
+  margin-bottom: 5px;
+  /* border-bottom: 1px solid gray; */
+}
+
+.table {
+  width: 100%;
+
+}
+
+.table td {
+padding-bottom: 15px;
+}
+
+/* применение селекторов от родительского класса */
+.table td:nth-child(2), .table td:nth-child(3) {
+  color: #86898f;
+}
+
+.contact h2 {
+text-align: center;
+
+}
+
+.form-group label {
+display: block;
+font-size: 14px;
+color: #86898f;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  /* убрали все границы */
+  border: none;
+  /* background: transparent; */
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.row > .form-group {
+  width: 50%;
+}
+
+.row > .form-group:first-child {
+  margin-right: 20px;
+}
+
+.btn {
+  background: #111;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* .position {
+position: relative;
+border: 4px solid black;
+margin-top: 40px;
+padding: 20px;
+height: 300px;
+
+}
+
+.box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+} */
+
+.bg-yellow {
+background: #fff9dc;
+}
+
+.bg-green {
+background: #e5ffe7;
+}
+
+.bg-red {
+background: #ffe5e5;
+}
+
+.incognito > div {
+  display: flex;
+  width: 200px;
+  height: 20px;
+  background-color: #f1f1f1;
+
+}
+/* ВАЖНО Box Model*/
+/*
+.social {
+   цвета тут https://developer.mozilla.org/en-US/docs/Web/CSS/named-color 
+  background-color: ;
+  padding внутренний отступ самого элемента
+  border: границы элемента
+  margin: внешние отступы 
+  padding: 15px 50px;
+  border: 5px solid red;
+  margin: 5px;
+}
+*/
